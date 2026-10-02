@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Prevent bots from crawling admin panel
+Disallow: /admin_panel
+
+# Point search engines to your sitemap
+Sitemap: https://cedar2.greentendo.cc/sitemap.xml

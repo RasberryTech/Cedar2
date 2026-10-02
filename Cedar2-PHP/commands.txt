@@ -1,0 +1,44 @@
+<!-- =============================
+     Community
+     ============================= -->
+	 
+	 INSERT INTO titles
+(title_name, title_desc, title_icon, title_banner, perm, type, user_made, title_by, owner_only)
+VALUES
+(0, 'My Community', 'Community description', '/assets/img/community-icon.png', '/assets/img/community-banner.png', 0, 1, 1, 1, 0);
+
+<!-- =============================
+     Community Levels
+     ============================= -->
+	 
+0	General Community
+1	Wii U Games
+2	3DS Games
+3	Wii U + 3DS Games
+4	Switch Games
+5	Special/internal title
+6	User-Created Community
+
+<!-- =============================
+     Rank Up
+     ============================= -->
+	 UPDATE users
+SET user_level = 0
+WHERE user_name = '???';
+
+<!-- =============================
+     User Levels
+     ============================= -->
+
+0 Normal
+1 Admin
+2 Verified
+
+<!-- =============================
+     Finding Users
+     ============================= -->
+	 
+	 SELECT user_id, user_name, user_level
+FROM users
+WHERE user_name = 'Rasberry2016';
+	 
